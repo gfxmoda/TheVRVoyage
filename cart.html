@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <title>Cart - The VR Voyage</title>
+     <link rel="shortcut icon" href="_media/vrv-favicon.png" type="image/x-icon" />
+          
+     <!-- Special general font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="_css/all.min.css">
+     
+     <!-- CSS files -->
+     <link rel="stylesheet" href="_css/normalize.css">
+     <link rel="stylesheet" href="_css/main.css">
+</head>
+<body>
+     <!-- start header -->
+     <script src="_logic/header.js"></script>
+     <!-- end header -->
+     <!-- start landing -->
+     <div class="landing tour-dest-landing cart-landing">
+          <div class="bg landing-bg cart-landing-bg"></div>
+          <div class="landing-overlay"></div>
+          <div class="container">
+               <section class="landing-content interest-landing-content cart-landing-content">
+                    <h1 class="highlighted highlighted-2">cart</h1>
+               </section>
+          </div>
+     </div>
+     <!-- end landing -->
+     <!-- start cart -->
+     <div class="cart">
+          <div class="container">
+               <form action="checkout.html">
+                    <span class="divider"></span>
+                    <div class="subtotal-row">
+                         <div class="subtotal">subtotal</div>
+                         <div class="subtotal-amount">&dollar;75.00</div>
+                    </div>
+                    <div class="discount-row">
+                         <label for="coupon-code">Coupon code:</label>
+                         <input type="text" name="coupon-code" id="coupon-code" placeholder="Enter Coupon Code">
+                         <input class="black-card" type="button" value="Apply">
+                    </div>
+                    <div class="partner-row">
+                         <label for="partner-code">Partner code:</label>
+                         <input type="text" name="partner-code" id="partner-code" placeholder="Enter Partner Code">
+                         <input class="black-card" type="button" value="Apply">
+                    </div>
+                    <span class="divider"></span>
+                    <div class="total-row">
+                         <div class="total">total</div>
+                         <div class="total-amount">&dollar;75.00</div>
+                    </div>
+                    <input class="black-card" type="submit" value="Proceed to Checkout">
+               </form>
+          </div>
+     </div>
+     <!-- end cart -->
+     <!-- cart logic -->
+     <script src="_logic/cart.js"></script>
+     <!-- start footer -->
+     <script src="_logic/footer.js"></script>
+     <!-- end footer -->
+
+</body>
+</html>
